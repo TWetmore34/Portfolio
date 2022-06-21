@@ -66,7 +66,7 @@ a:hover {
 }
 
 #work {
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 #header-img {
@@ -96,7 +96,7 @@ html {
 main {
     width: 100%;
     max-width: 100%;
-    padding: 0;
+    padding-right: 15px;
 }
 
 main h1 {
@@ -115,6 +115,14 @@ main h1 {
 
 .col2 {
     height: 200px;
+    width: 100%;
+}
+
+.col3 {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .apps {
@@ -130,7 +138,7 @@ main h1 {
     width: 200px;
     position: relative;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 /* id love to find a way of aligning 
@@ -152,4 +160,9 @@ h3 {
 }
 .info p {
     margin: 0;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
 }
