@@ -1,0 +1,155 @@
+:root {
+    --header-text: #773344;
+    --background: #E3B5A4;
+    --header-color: #F5E9E2;
+    --img-text: #4E6766;
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+.menubar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: var(--header-color);
+    width: 100vw;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.menubar h1 {
+    display: flex;
+    width: auto;
+    margin: auto;
+    align-items: flex-start;
+    flex-grow: 2;
+}
+
+.links {
+    /* Change the display colors for this. 
+    We can add a nice background color change on 
+    hover and make it so the blue/purple 
+    when clicked is gone */
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    /* find a color pallete generator and 
+    use some of those options here */
+    color: var(--header-text);
+    font-size: 24px;
+    padding-right: 5px;
+}
+
+a:hover {
+    background-color: silver;
+    color: black;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+#work {
+    padding-right: 10px;
+}
+
+#header-img {
+    width: 100%;
+    z-index: 1;
+    height: 200px;
+    position: relative;
+    background-image: url("https://picsum.photos/200/200");
+    left: 0;
+}
+
+.header-info {
+    background-color: var(--img-text);
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid black;
+    box-shadow: 3px 3px grey;
+    color: black;
+}
+
+html {
+    background-color: var(--background);
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+main h1 {
+    margin-right: 5px;
+    border-right: 2px solid black;
+    color: var(--header-text)
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+    width: auto;
+}
+
+.col2 {
+    height: 200px;
+}
+
+.apps {
+    width: 100vw;
+    height: 190px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.app {
+    background-image: url("https://picsum.photos/200/200");
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* id love to find a way of aligning 
+the boxes from these in a way similar to 
+justify-content: basline; but without 
+flexbox */
+
+.info {
+    background-color: var(--img-text);
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 3px;
+    border: 1px solid black;
+    box-shadow: 3px 3px grey;
+}
+h3 {
+    margin: 0;
+}
+.info p {
+    margin: 0;
+}
