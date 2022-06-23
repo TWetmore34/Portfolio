@@ -120,8 +120,9 @@ main h1 {
     justify-content: flex-start;
 }
 
-.col2, .apps {
+.col2, .apps, .col3 {
     border-left: 1px solid black; 
+    margin-bottom: 10px;
 }
 
 .apps {
@@ -129,6 +130,7 @@ main h1 {
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 390px) {
@@ -137,7 +139,7 @@ main h1 {
     }
 }
 
-.app {
+.app, .appBig {
     background-image: url("https://picsum.photos/200/200");
     height: 200px;
     width: 200px;
@@ -146,10 +148,9 @@ main h1 {
     margin: 5px 10px;
 }
 
-/* id love to find a way of aligning 
-the boxes from these in a way similar to 
-justify-content: basline; but without 
-flexbox */
+.appBig {
+    width: 65vw;
+}
 
 .info {
     background-color: var(--img-text);
