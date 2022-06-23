@@ -125,17 +125,17 @@ main h1 {
 }
 
 .apps {
-    width: 100vw;
+    width: auto;
     height: auto;
     display: flex;
     flex-wrap: wrap;
 }
+
 @media screen and (max-width: 390px) {
     .apps {
         flex-direction: column;
     }
 }
-
 
 .app {
     background-image: url("https://picsum.photos/200/200");
